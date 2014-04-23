@@ -3,14 +3,13 @@
   "repo": "{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}",
   "description": "{{ cookiecutter.description }}",
   "version": "{{ cookiecutter.version }}",
-  "keywords": [],
+  "keywords": [
+      "html",
+      "css"
+  ],
   "dependencies": {},
   "development": {},
   "license": "{{ cookiecutter.license }}",
-  "main": "dist/{{ cookiecutter.repo_name }}.js",
-  "scripts": [
-    "dist/{{ cookiecutter.repo_name }}.js"
-  ],
   "styles": [
     "dist/{{ cookiecutter.repo_name }}.css"
   ]

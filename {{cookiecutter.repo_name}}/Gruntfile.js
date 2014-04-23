@@ -17,34 +17,11 @@ module.exports = function(grunt) {
         " */\n"
     },
 
-    // Lint definitions
-    jshint: {
-      files: ["src/{{ cookiecutter.repo_name }}.js"],
-      options: {
-        jshintrc: ".jshintrc"
-      }
-    },
-
     // Concat definitions
     concat: {
-      dist_js: {
-        src: "src/{{ cookiecutter.repo_name }}.js",
-        dest: "dist/{{ cookiecutter.repo_name }}.js"
-      },
       dist_css: {
         src: "src/{{ cookiecutter.repo_name }}.css",
         dest: "dist/{{ cookiecutter.repo_name }}.css"
-      },
-      options: {
-        banner: "<%= meta.banner %>"
-      }
-    },
-
-    // Minify definitions
-    uglify: {
-      dist: {
-        src: "dist/{{ cookiecutter.repo_name }}.js",
-        dest: "dist/{{ cookiecutter.repo_name }}.min.js"
       },
       options: {
         banner: "<%= meta.banner %>"
@@ -76,13 +53,9 @@ module.exports = function(grunt) {
 
   });
 
-  grunt.loadNpmTasks("grunt-contrib-jshint");
   grunt.loadNpmTasks("grunt-contrib-concat");
-  grunt.loadNpmTasks("grunt-contrib-uglify");
   grunt.loadNpmTasks("grunt-contrib-cssmin");
   grunt.loadNpmTasks("grunt-contrib-connect");
 
-  grunt.registerTask("default", ["jshint", "concat", "uglify", "cssmin", "connect"]);
-  grunt.registerTask("travis", ["jshint"]);
-
+  grunt.registerTask("default", ["concat", "cssmin", "connect"]);
 };

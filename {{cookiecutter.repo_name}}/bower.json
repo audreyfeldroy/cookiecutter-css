@@ -3,7 +3,6 @@
   "version": "{{ cookiecutter.version }}",
   "main": [
     "dist/{{ cookiecutter.repo_name }}.css",
-    "dist/{{ cookiecutter.repo_name }}.js",
   ],
   "ignore": [
     ".DS_Store",

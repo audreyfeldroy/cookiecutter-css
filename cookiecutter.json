@@ -3,11 +3,10 @@
   "email": "you@example.com",
   "github_username": "username",
   "repo_name": "boilerplate",
-  "project_name": "jQuery Boilerplate",
-  "project_short_description": "A jump-start for jQuery plugins development.",
-  "release_date": "2013-08-14",
-  "year": "2013",
+  "project_name": "Boilerplate",
+  "project_short_description": "Starter boilerplate for a CSS project.",
+  "release_date": "2014-04-23",
+  "year": "2014",
   "version": "0.1.0",
-  "pluginName": "boilerPlate",
-  "className": "BoilerPlate"
+  "class_name": "boiler-plate"
 }
