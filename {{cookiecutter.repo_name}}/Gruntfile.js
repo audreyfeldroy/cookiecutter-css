@@ -3,14 +3,14 @@ module.exports = function(grunt) {
   grunt.initConfig({
 
     // Import package manifest
-    pkg: grunt.file.readJSON("package.json"),
+    pkg: grunt.file.readJSON("component.json"),
 
     // Banner definitions
     meta: {
       banner: "/*\n" +
-        " *  <%= pkg.title || pkg.name %> - v<%= pkg.version %>\n" +
+        " *  <%= pkg.name %> - v<%= pkg.version %>\n" +
         " *  <%= pkg.description %>\n" +
-        " *  <%= pkg.homepage %>\n" +
+        " *  http://github.com/<%= pkg.repo %>\n" +
         " *\n" +
         " *  Made by <%= pkg.author %>\n" +
         " *  Under <%= pkg.licenses[0].type %> License\n" +
@@ -38,7 +38,7 @@ module.exports = function(grunt) {
           'dist/{{ cookiecutter.repo_name }}.min.css': ['src/{{ cookiecutter.repo_name }}.css']
         }
       }
-    }
+    },
 
     // Start up server on 8080 and open demo
     connect: {

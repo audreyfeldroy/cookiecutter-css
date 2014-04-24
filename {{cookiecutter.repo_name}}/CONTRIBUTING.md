@@ -1,5 +1,18 @@
 # Contributing
 
+## Setting this up for local development
+
+For advanced developers only. Requires Python and Cookiecutter.
+
+```
+$ python run.py
+```
+
+This generates a throwaway `boilerplate/` package and runs the default Grunt task.
+Every time you run it, the previous `boilerplate/` directory is deleted.
+
+## Pull requests
+
 ### Before sending a pull request
 
 Try to keep your pull request:
@@ -22,6 +35,8 @@ Please don't:
 4. Commit your changes: `git commit -m 'Add some feature'`
 5. Push to the branch: `git push origin my-new-feature`
 6. Submit a pull request
+
+## Submitting examples
 
 ### Have you created a site using {{ cookiecutter.project_name}}?
 
