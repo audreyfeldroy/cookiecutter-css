@@ -12,4 +12,5 @@ if os.path.exists('boilerplate/'):
 cookiecutter("../cookiecutter-css/", no_input=True)
 
 with work_in('boilerplate/'):
+    os.system("npm install")
     os.system("grunt")
