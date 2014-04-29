@@ -12,8 +12,8 @@ module.exports = function(grunt) {
         " *  <%= pkg.description %>\n" +
         " *  http://github.com/<%= pkg.repo %>\n" +
         " *\n" +
-        " *  Made by <%= pkg.author %>\n" +
-        " *  Under <%= pkg.licenses[0].type %> License\n" +
+        " *  Made by {{ cookiecutter.full_name }}\n" +
+        " *  Under {{ cookiecutter.license }} License\n" +
         " */\n"
     },
 

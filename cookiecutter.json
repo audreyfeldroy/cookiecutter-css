@@ -8,5 +8,6 @@
   "release_date": "2014-04-23",
   "year": "2014",
   "version": "0.1.0",
-  "class_name": "boiler-plate"
+  "class_name": "boiler-plate",
+  "license": "MIT"
 }
