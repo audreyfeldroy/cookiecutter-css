@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
 	<head>
-		<title>{{ cookiecutter.project_name }}</title>
-    <link href="../dist/{{ cookiecutter.repo_name }}.min.css" rel="stylesheet">
+    <meta charset='utf-8' />
+		<title>{{ cookiecutter.project_name }} by {{ cookiecutter.github_username }}</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link href="../dist/{{ cookiecutter.repo_name }}.min.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
-    <h1>{{ cookiecutter.project_name }} Demo</h1>
-    <div class="{{ cookiecutter.class_name }}">
-      This is a div with class {{ cookiecutter.class_name }}.
-    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>{{ cookiecutter.project_name }}</h1>
+          <div class="{{ cookiecutter.class_name }}">
+            This is a div with class {{ cookiecutter.class_name }}.
+          </div>
+        </div>
 	</body>
 </html>

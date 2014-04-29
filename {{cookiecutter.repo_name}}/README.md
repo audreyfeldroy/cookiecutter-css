@@ -12,7 +12,7 @@ Live demo: http://{{ cookiecutter.github_username }}.github.io/{{ cookiecutter.r
 
 To try out the demo locally:
 
-1. Make sure you have NPM and Grunt installed.
+1. Make sure you have NPM installed.
 2. Set up {{ cookiecutter.project_name }} and run it:
 
   ```bash
@@ -21,6 +21,8 @@ To try out the demo locally:
   npm install
   grunt
   ```
+
+There is also a bare-bones version of the demo here: http://{{ cookiecutter.github_username }}.github.io/{{ cookiecutter.repo_name }}/demo/simple.html.
 
 ## Usage
 
